@@ -81,7 +81,7 @@ int minimax(char board[3][3], int depth, bool isMax){
                 if(board[i][j]=='_'){
                     board[i][j] = opponent;
                     best = min(best,minimax(board,depth+1,!isMax));
-					board[i][j] = '_';
+		    board[i][j] = '_';
                 }
             }
         }
